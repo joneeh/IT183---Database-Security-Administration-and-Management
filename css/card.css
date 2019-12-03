@@ -1,0 +1,71 @@
+#card{
+    position: relative;
+    background-color: rgb(42, 109, 109);
+    width: 500px;
+    height: 250px;
+    margin-top: 150px;
+    margin-left: 100px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 3px 5px 5px rgb(155, 155, 155);
+}
+
+#card .bankname img{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    transform: translate(0px, -23px);
+}
+
+.cardtype img{
+    position: absolute;
+    width: 103px;
+    z-index: 2;
+    transform: translate(380px, 105px);
+}
+
+#card .background img{
+    position: absolute;
+    width: 250px;
+    z-index: 1;
+    transform: translate(250px, -250px);
+    overflow: hidden;
+}
+
+.cardtype p{
+    position: relative;
+    z-index: 3;
+    transform: translate(440px, 140px);
+}
+
+.bankname h1{
+    color: silver;
+    transform: translate(80px, 0px);
+}
+
+#card h1, h2, h3, h4, .date{
+    color: silver;
+}
+
+#card h2{
+    transform: translate(30px, 0px);
+}
+
+#card .date{
+    font-size: 12px;
+    transform: translate(30px, 0px);
+}
+
+#card h3{
+    transform: translate(30px, -20px);
+}
+
+#card h4{
+    transform: translate(30px, -40px);
+    font-style: italic;
+}
+
+.cardcontain{
+   margin-top: 200px;
+   margin-left: 100px;
+}

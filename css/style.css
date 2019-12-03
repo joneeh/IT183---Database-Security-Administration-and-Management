@@ -1,0 +1,576 @@
+body {
+    margin: 0;
+    background-color: gainsboro;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.divider1 {
+    height: calc(100vh);
+    float: left;
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    background-color: rgb(28, 71, 71);
+}
+
+.divider1 img {
+    transform: translate(70px);
+    width: 70%;
+    height: 70%;
+}
+
+.divider1 h1 {
+    transform: translate(85px);
+    color: white;
+    font-size: 60px;
+}
+
+.divider2 {
+    height: calc(100vh);
+    float: right;
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    background-color: white;
+}
+
+.divider3 {
+    height: calc(89vh);
+    float: left;
+    padding: 0;
+    margin: 0;
+    width: 50%;
+}
+
+.divider4 {
+    height: calc(89.5vh);
+    float: left;
+    padding: 0;
+    margin: 0;
+    width: 50%;
+}
+
+#login {
+    transform: translate(200px, 220px);
+    display: inline-block;
+}
+
+#update {
+    width: 400px;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 3px 3px rgb(143, 142, 142, 0.5);
+    transform: translate(150px, 100px);
+    display: inline-block;
+}
+
+#update .button {
+    float: right;
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid rgb(28, 71, 71);
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: rgb(42, 109, 109);
+    color: white;
+    display: block;
+    cursor:pointer;
+    z-index: 99;
+}
+
+#update h1{
+    text-align: center;
+}
+
+#updatepass {
+    width: 400px;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 3px 3px rgb(143, 142, 142, 0.5);
+    transform: translate(800px, -225px);
+    display: inline-block;
+}
+
+#updatepass .button {
+    float: right;
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid rgb(28, 71, 71);
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: rgb(42, 109, 109);
+    color: white;
+    display: block;
+    cursor:pointer;
+    z-index: 99;
+}
+
+#updatepass h1{
+    text-align: center;
+}
+
+.input {
+    width: 200px;
+    position: relative;
+    display: block;
+}
+
+input[type=username],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(172, 172, 172);
+    background-color: rgb(248, 248, 248);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=username],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(172, 172, 172);
+    background-color: rgb(248, 248, 248);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=password],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(172, 172, 172);
+    background-color: rgb(248, 248, 248);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.divider2 .button {
+    float: right;
+    width: 30%;
+    padding: 12px 20px;
+    margin-top: 8px;
+    border: 1px solid rgb(28, 71, 71);
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: rgb(42, 109, 109);
+    color: white;
+    display: block;
+    cursor:pointer;
+    z-index: 99;
+}
+
+input[type=number],
+select {
+    width: 65%;
+    padding: 12px 20px;
+    margin-top: 26px;
+    border: 1px solid rgb(172, 172, 172);
+    background-color: rgb(248, 248, 248);
+    border-radius: 4px;
+    box-sizing: border-box;
+    z-index: 98;
+    float: left;
+}
+
+#withdraw{
+    margin-top: 100px;
+}
+#withdraw h2{
+    padding-top: 20px;
+    padding-bottom: -50px;
+    color: rgb(37, 37, 37);
+    text-align: center;
+    margin-left: -20px;
+}
+
+#withdraw .button {
+    float: right;
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid rgb(28, 71, 71);
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: rgb(42, 109, 109);
+    color: white;
+    display: block;
+    cursor:pointer;
+    z-index: 99;
+}
+
+.button:hover {
+    background-color: rgb(28, 71, 71);
+}
+
+@media only screen and (max-width: 700px) {
+    .divider1 {
+        width: 100%;
+        clear: both;
+    }
+
+    .divider2 {
+        width: 100%;
+        clear: both;
+    }
+
+    body {
+        clear: both;
+    }
+}
+
+.alert {
+    margin-left: 200px;
+    transform: translate(0px, 220px);
+    color: red;
+}
+
+.deposit .alert {
+    transform: translate(0px, 0px);
+    margin-left: 10px;
+    color: red;
+}
+
+.tabling a{
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    margin-left: 1100px;
+    margin-top: -30px;
+    padding: 10px;
+    border: 1px solid rgb(28, 71, 71);
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: rgb(42, 109, 109);
+    color: white;
+    display: block;
+    cursor:pointer;
+}
+
+.tablingTeller a{
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    margin-left: 1100px;
+    margin-top: -30px;
+    padding: 10px;
+    border: 1px solid rgb(28, 71, 71);
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: rgb(42, 109, 109);
+    color: white;
+    display: block;
+    cursor:pointer;
+}
+
+.tabling {
+    margin-top: 100px;
+    position: absolute;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+}
+
+.tablingTeller {
+    margin-top: 100px;
+    position: absolute;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+}
+.tabling h1{
+    font-size: 35px;
+    margin-left: 20px;
+    margin-bottom: -50px;
+}
+.tablingTeller h1{
+    font-size: 35px;
+    margin-left: 20px;
+    margin-bottom: -50px;
+}
+
+.tabling .edit{
+    margin-left: 950px;
+}
+
+.tabling .del{
+    margin-left: 780px;
+}
+
+.tablingTeller .dep{
+    margin-left: 1100px;
+}
+
+#myInput{
+    width: 75%;
+    float: right;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid rgb(172, 172, 172);
+    background-color: rgb(248, 248, 248);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    box-shadow: 3px 3px rgb(143, 142, 142, 0.5);
+}
+
+th {
+    height: 50px;
+    color: rgb(42, 109, 109);
+    background-color: white;
+}
+
+.pads{
+    text-align: right;
+}
+
+.pads1{
+    text-align: left;
+}
+
+td {
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(226, 226, 226);
+}
+tr:nth-child(odd) {
+    background-color: rgb(245, 244, 244);
+}
+
+.accountb{
+    margin-top: 160px;
+}
+
+.accountb h1{
+    color: rgb(37, 37, 37);
+    transform: translate(30px, 50px);
+}
+
+.infobox{
+    width: 600px;
+    height: 140px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 3px 3px rgb(143, 142, 142, 0.5);
+}
+
+.sucess{
+    border-radius: 5px;
+    background-color: white;
+    margin-top: 200px;
+    float: right;
+    margin-right: 35%;
+    width: 450px;
+    text-align: center;
+    box-shadow: 3px 3px rgb(143, 142, 142, 0.5);
+}
+
+.success h1{
+    color:  red;
+    font-size: 50px;
+}
+
+.sucess a{
+    padding-bottom: 20px;
+    text-decoration: none;
+    font-size: 30px;
+    display: block;
+    color:  rgb(28, 71, 71);
+}
+
+.createNewAcc{
+    margin-top: 50px;
+    position: absolute;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.createNewAcc h1{
+    font-size: 35px;
+    margin-left: 20px;
+}
+
+.createNewAcc .button {
+    float: right;
+    width: 20%;
+    padding: 12px 20px;
+    margin-top: 8px;
+    margin-right: 238px;
+    border: 1px solid rgb(28, 71, 71);
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: rgb(42, 109, 109);
+    color: white;
+    display: block;
+    cursor:pointer;
+    z-index: 99;
+}
+
+.depositAcc .button {
+    width: 20%;
+    padding: 12px 20px;
+    margin-top: 8px;
+    margin-right: 238px;
+    border: 1px solid rgb(28, 71, 71);
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: rgb(42, 109, 109);
+    color: white;
+    display: block;
+    cursor:pointer;
+    z-index: 99;
+}
+
+input[type=text] {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(172, 172, 172);
+    background-color: rgb(248, 248, 248);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#editacc input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(172, 172, 172);
+    background-color: rgb(248, 248, 248);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.createNewAcc input[type=password] {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(172, 172, 172);
+    background-color: rgb(248, 248, 248);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.dep{
+    margin-left: -60px;
+}
+
+.deposit input[type=text] {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(172, 172, 172);
+    background-color: rgb(248, 248, 248);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.depositAcc{
+    margin-top: 50px;
+    margin-left: 400px;
+}
+
+.createNewAcc h1{
+    width: 700px;
+}
+.cardcontain h1{
+    color: black;
+}
+.cardcontain h2{
+    margin-left: 50px;
+    color: black;
+}
+.cardcontain{
+    border-radius: 5px;
+    padding: 10px;
+    width: 500px;
+    background-color: white;
+    margin-left: 150px;
+    margin-top: -30px;
+}
+
+.createNewAcc h1{
+    width: 700px;
+}
+.cardcontain2 h1{
+    color: black;
+}
+.cardcontain2 h2{
+    margin-left: 50px;
+    color: black;
+}
+.cardcontain2{
+    border-radius: 5px;
+    padding: 10px;
+    width: 500px;
+    background-color: white;
+    margin-left: 750px;
+    margin-top: -340px;
+}
+
+select{
+    width: 20%;
+    margin: 8px 5px 0px 0px;
+    display: inline-block;
+    border: 1px solid rgb(172, 172, 172);
+    background-color: rgb(248, 248, 248);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.newAccform{
+transform: translate(100px);
+}
+
+#deposit button{
+    transform: translate(320px,-57px);
+}
+
+
+#depo {
+    margin-left: 300px;
+    width: 50%;
+}
+
+#depo h2{
+    padding-top: 20px;
+    padding-bottom: -50px;
+    color: rgb(37, 37, 37);
+    text-align: center;
+    margin-left: -20px;
+}
+
+#depo .button {
+    float: right;
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid rgb(28, 71, 71);
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: rgb(42, 109, 109);
+    color: white;
+    display: block;
+    cursor:pointer;
+    z-index: 99;
+}
