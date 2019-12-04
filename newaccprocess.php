@@ -24,7 +24,7 @@ require_once('connection.php');
         $accN = rand($min, $max);
         $cardN = rand($minc, $maxc);
         $query4="insert ignore into customer (id, bid, cfname, clname, expiryDate, cemail, cpassword, accountNumber, cardNumber, balance, accountType)
-        Values(NULL, $bid,'".$_POST['fname']."','".$_POST['lname']."', TIMESTAMPADD(YEAR,5,current_date),'".$_POST['email']."','".$_POST['password']."',
+        Values(NULL, $bid,'".$_POST['cfname']."','".$_POST['clname']."', TIMESTAMPADD(YEAR,5,current_date),'".$_POST['cemail']."','".$_POST['cpassword']."',
         $accN,$cardN,'500','".$_POST['cardType']."')" ;
         
         $result4=mysqli_query($conn,$query4);

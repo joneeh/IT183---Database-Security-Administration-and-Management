@@ -273,6 +273,22 @@ select {
     cursor:pointer;
 }
 
+.tablingadmin a{
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    margin-left: 1100px;
+    margin-top: -30px;
+    padding: 10px;
+    border: 1px solid rgb(28, 71, 71);
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: rgb(42, 109, 109);
+    color: white;
+    display: block;
+    cursor:pointer;
+}
+
 .tabling {
     margin-top: 100px;
     position: absolute;
@@ -288,12 +304,27 @@ select {
     margin-right: 50px;
     margin-bottom: 100px;
 }
+
+.tablingadmin {
+    margin-top: 100px;
+    position: absolute;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+}
+
 .tabling h1{
     font-size: 35px;
     margin-left: 20px;
     margin-bottom: -50px;
 }
 .tablingTeller h1{
+    font-size: 35px;
+    margin-left: 20px;
+    margin-bottom: -50px;
+}
+
+.tablingadmin h1{
     font-size: 35px;
     margin-left: 20px;
     margin-bottom: -50px;
@@ -307,8 +338,33 @@ select {
     margin-left: 780px;
 }
 
+.tablingadmin .anm{
+    margin-left: 1000px;
+}
+
+.tablingadmin .del{
+    margin-left: 760px;
+}
+
+.tablingadmin .edit{
+    margin-left: 535px;
+}
+
+
 .tablingTeller .dep{
     margin-left: 1100px;
+}
+
+.tablingTeller .with{
+    margin-left: 900px;
+}
+
+.tabling .dep{
+    margin-left: 600px;
+}
+
+.tabling .with{
+    margin-left: 410px;
 }
 
 #myInput{
@@ -394,24 +450,29 @@ tr:nth-child(odd) {
     color:  rgb(28, 71, 71);
 }
 
+
 .createNewAcc{
+    border-radius: 5px;
+    box-shadow: 3px 3px rgb(143, 142, 142, 0.5);
+    padding: 20px;
+    width: 500px;
+    background-color: white;
     margin-top: 50px;
     position: absolute;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 350px;
 }
 
 .createNewAcc h1{
+    margin-top: -5px;
     font-size: 35px;
-    margin-left: 20px;
 }
 
-.createNewAcc .button {
+.newAccform .button {
     float: right;
     width: 20%;
     padding: 12px 20px;
     margin-top: 8px;
-    margin-right: 238px;
+    margin-right: 500px;
     border: 1px solid rgb(28, 71, 71);
     border-radius: 4px;
     box-sizing: border-box;
@@ -437,6 +498,18 @@ tr:nth-child(odd) {
     z-index: 99;
 }
 
+.createNewAcc input[type=text] {
+    width: 53%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(172, 172, 172);
+    background-color: rgb(248, 248, 248);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
 input[type=text] {
     width: 20%;
     padding: 12px 20px;
@@ -459,8 +532,12 @@ input[type=text] {
     box-sizing: border-box;
 }
 
+#editacc select{
+    width: 100%;
+}
+
 .createNewAcc input[type=password] {
-    width: 20%;
+    width: 53%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -469,6 +546,22 @@ input[type=text] {
     border-radius: 4px;
     box-sizing: border-box;
 }
+
+.createNewAcc .button {
+    width: 20%;
+    padding: 12px 20px;
+    margin-top: 8px;
+    margin-right: 238px;
+    border: 1px solid rgb(28, 71, 71);
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: rgb(42, 109, 109);
+    color: white;
+    display: block;
+    cursor:pointer;
+    z-index: 99;
+}
+
 
 .dep{
     margin-left: -60px;
@@ -509,6 +602,55 @@ input[type=text] {
     margin-top: -30px;
 }
 
+}
+.cardcontain3 h1{
+    color: black;
+}
+.cardcontain3 h2{
+    margin-left: 50px;
+    color: black;
+}
+.cardcontain3{
+    border-radius: 5px;
+    padding: 10px;
+    width: 500px;
+    background-color: white;
+    margin-left: 750px;
+    margin-top: -340px;
+}
+
+.cardcontaindel h1{
+    color: black;
+}
+.cardcontaindel h2{
+    margin-left: 50px;
+    color: black;
+}
+.cardcontaindel{
+    border-radius: 5px;
+    padding: 10px;
+    width: 500px;
+    background-color: white;
+    margin-left: 395px;
+    margin-top: -30px;
+}
+
+.cardcontaindep h1{
+    color: black;
+}
+.cardcontaindep h2{
+    margin-left: 50px;
+    color: black;
+}
+.cardcontaindep{
+    border-radius: 5px;
+    padding: 10px;
+    width: 500px;
+    background-color: white;
+    margin-left: 395px;
+    margin-top: -30px;
+}
+
 .createNewAcc h1{
     width: 700px;
 }
@@ -520,6 +662,7 @@ input[type=text] {
     color: black;
 }
 .cardcontain2{
+    height: 321px;
     border-radius: 5px;
     padding: 10px;
     width: 500px;
@@ -529,7 +672,7 @@ input[type=text] {
 }
 
 select{
-    width: 20%;
+    width: 30%;
     margin: 8px 5px 0px 0px;
     display: inline-block;
     border: 1px solid rgb(172, 172, 172);
@@ -546,6 +689,9 @@ transform: translate(100px);
     transform: translate(320px,-57px);
 }
 
+#deposit2 button{
+    transform: translate(600px,-57px);
+}
 
 #depo {
     margin-left: 300px;
@@ -574,3 +720,81 @@ transform: translate(100px);
     cursor:pointer;
     z-index: 99;
 }
+
+
+
+#delc {
+    margin-left: 235px;
+    width: 50%;
+}
+
+#delc h2{
+    padding-top: 20px;
+    padding-bottom: -50px;
+    color: rgb(37, 37, 37);
+    text-align: center;
+    margin-left: -20px;
+}
+
+#delc .button {
+    float: right;
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid rgb(28, 71, 71);
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: rgb(42, 109, 109);
+    color: white;
+    display: block;
+    cursor:pointer;
+    z-index: 99;
+}
+
+#editc {
+    margin-left: 260px;
+    width: 50%;
+}
+
+#editc h2{
+    padding-top: 20px;
+    padding-bottom: -50px;
+    color: rgb(37, 37, 37);
+    text-align: center;
+    margin-left: -20px;
+}
+
+#editc .button {
+    float: right;
+    width: 40%;
+    padding: 12px 20px;
+    margin: 40px 0;
+    border: 1px solid rgb(28, 71, 71);
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: rgb(42, 109, 109);
+    color: white;
+    display: block;
+    cursor:pointer;
+    z-index: 99;
+}
+
+.nav{
+    margin-top: 30px;
+    margin-left: 500px;
+    position: absolute;
+}
+
+.nav a{
+    padding: 30px;
+    color: black;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: rgb(28, 71, 71);
+  }
+
+.nav a:active {
+    color: rgb(28, 71, 71);
+  }

@@ -38,16 +38,7 @@
             </div>
         </div>
         <div class="user">
-            <?php
-            echo $_SESSION['fname'].' '.$_SESSION['lname'].
-            '<br>';
-        ?>
-            <div class="role">
-                <?php
-            echo $_SESSION['position'].
-            '<br>';
-        ?>
-            </div>
+           Administrator
         </div>
     </div>
     <div class="depositAcc">
@@ -60,41 +51,31 @@
         <?php
             }
         ?>
-            <form action="deleteaccquery.php" method="post">
+            <form action="deleteemployeeprocess.php" method="post">
                 <div id="deposit">
-                    <input class="input" type="text" name="accountNumber" placeholder="Account Number"><br>
-                    <button class="button" type="submit" name="ok">Ok</button>
+                    <input class="input" type="text" name="fname" placeholder="First Name"><br>
+                    <input class="input" type="text" name="lname" placeholder="Last Name"><br>
+                    <button class="button" type="submit" name="ok4">Ok</button>
                 </div>
             </form>
         </div>
     </div>
     <div class="cardcontaindel">
-    <h1 style="color: red; text-align:center;">Delete Account</h1>
-    <h2>Account Owner:
+    <h1 style="color: red; text-align:center;">Delete Employee Account</h1>
+    <h2>Employee:
         <?php
-            echo $_SESSION['cfname'].' '.$_SESSION['clname'];
+            echo $_SESSION['fname'].' '.$_SESSION['lname'];
         ?>
     </h2>
-    <h2>Account Number:
-        <?php
-            echo $_SESSION['accountNumber'];
+    <h2>Role: 
+            <?php
+            echo $_SESSION['position'];
         ?>
-    </h2>
-    <h2>Card Number:
-        <?php
-            echo $_SESSION['cardNumber'];
-        ?>
-    </h2>
-    <h2>
-    Account Balance: 
-    <?php
-        echo $_SESSION['balance'];
-    ?>
     </h2>
     </div>
-    <form action="deleteaccquery.php" method="post">
+    <form action="deleteemployeeprocess.php" method="post">
     <div id="delc">
-        <button class="button" type="submit" onclick="javascript: return confirm('Please confirm account deletion');" name="confdelete">Proceed</button>
+        <button class="button" type="submit" onclick="javascript: return confirm('Please confirm deposit');" name="confdeleteemp">Proceed</button>
     </div>
     </form>
 </body>

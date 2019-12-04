@@ -49,7 +49,8 @@
         </div>
     </div>
     <div class="tablingTeller">
-        <a class="dep" href="deposit.php">Deposit Money</a>
+        <a class="with" href="withdrawacc.php">Withdraw Account</a>
+        <a class="dep" href="deposit.php">Deposit Account</a>
         <h1>Account Holders</h1>
         <input type="text" id="myInput" onkeyup="search()" placeholder="Search for account number">
         

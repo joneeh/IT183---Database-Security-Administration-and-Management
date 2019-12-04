@@ -36,51 +36,37 @@
             </div>
         </div>
         <div class="user">
-        <?php
-            echo $_SESSION['fname'].' '.$_SESSION['lname'].
-            '<br>';
-        ?>
-        <div class="role">
-        <?php
-            echo $_SESSION['position'].
-            '<br>';
-        ?>
-        </div>
+            Administrator
         </div>
     </div>
-    <div class="tabling">
-        <a class="with" href="withdrawacc.php">Withdraw Account</a>
-        <a class="dep" href="deposit.php">Deposit Account</a>
-        <a class="anm" href="newacc.php">Add New Account</a>
-        <a class="del" href="deleteacc.php">Delete Account</a>
-        <a class="edit" href="editacc.php">Edit Account</a>
-        <h1>Account Holders</h1>
-        <input type="text" id="myInput" onkeyup="search()" placeholder="Search for account number">
+    <div class="tablingadmin">
+        <a class="anm" href="addemployee.php">Add New Employee Account</a>
+        <a class="del" href="deleteemployee.php">Delete Employee Account</a>
+        <a class="edit" href="editemployee.php">Edit Employee Account</a>
+        <h1>Bank Employees</h1>
+        <input type="text" id="myInput" onkeyup="searchemp()" placeholder="Search for Names">
         
-        <table id="myTable">
+        <table class="table" id="myTable">
             <tr>
-                <th style="width:10%;" onclick="sortTable(0)">Branch Code</th>
+                <th style="width:10%;" onclick="sortTable(0)">Position</th>
                 <th style="width:10%;" onclick="sortTable(1)">First Name</th>
                 <th style="width:10%;" onclick="sortTable(2)">Last Name</th>
-                <th style="width:10%;" onclick="sortTable(3)">Account Number</th>
-                <th style="width:10%;" onclick="sortTable(4)">Card Number</th>
-                <th style="width:10%;" onclick="sortTable(5)">Balance</th>
-                <th style="width:10%;" onclick="sortTable(6)">Account Type</th>
-                <th style="width:10%;" onclick="sortTable(7)">Expiry Date</th>
+                <th style="width:10%;" onclick="sortTable(3)">Email</th>
+                <th style="width:10%;" onclick="sortTable(4)">Password
+                </th>
             </tr>
             <?php
             require_once('connection.php');
 
-            $sql = "select * from tellerviewcustomer";
+            $sql = "select * from adminviewemployee";
             $result = $conn-> query($sql);
 
             if($result-> num_rows >0)
             {
                 while($row = $result-> fetch_assoc())
                 {
-                    echo "<tr><td>".$row['branchCode']."</td><td class=pads1>".$row['cfname']."</td><td class=pads1>".$row['clname']
-                    ."</td><td>".$row['accountNumber']."</td><td>".$row['cardNumber']."</td><td class=pads>".$row['balance']
-                    ."</td><td>".$row['accountType']."</td><td>".$row['expiryDate']."</td></tr>";
+                    echo "<tr><td>".$row['position']."</td><td class=pads1>".$row['fname']."</td><td class=pads1>".$row['lname']
+                    ."</td><td>".$row['email']."</td><td>".$row['password']."</td></tr>";
                 }
                 echo "</table>";
             }
@@ -91,7 +77,7 @@
 
             $conn-> close();
             ?>
-        </table>
+
     </div>
 </body>
 

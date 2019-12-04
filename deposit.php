@@ -68,7 +68,7 @@
             </form>
         </div>
     </div>
-    <div class="cardcontain">
+    <div class="cardcontaindep">
     <h1>Deposit Money to:</h1>
     <h2>Account Owner:
         <?php

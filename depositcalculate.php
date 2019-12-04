@@ -7,7 +7,23 @@ require_once('connection.php');
 
         if ($data1 = mysqli_query($conn, $query7))
         {
-            header("location:manage.php");
+            $query15="select * from employee where fname='".$_SESSION['fname']."' and lname='".$_SESSION['lname']."'" ;
+            $result15=mysqli_query($conn,$query15);
+            
+            if($data15 = mysqli_fetch_array($result15))
+			{
+                if($_SESSION['position']=$data15['position']=='Teller')
+                {
+					$_SESSION['position']=$data15['position'];
+                    echo $_SESSION['position'].
+                    header("location:manage.php");
+                }
+                elseif($_SESSION['position']=$data15['position']=='Manager')
+                {
+					$_SESSION['position']=$data15['position'];
+                    header("location:managerview.php");
+                }
+            }
         }
         else 
         {

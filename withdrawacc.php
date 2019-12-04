@@ -60,7 +60,7 @@
         <?php
             }
         ?>
-            <form action="editaccquery.php" method="post">
+            <form action="withdrawMquery.php" method="post">
                 <div id="deposit">
                     <input class="input" type="text" name="accountNumber" placeholder="Account Number"><br>
                     <button class="button" type="submit" name="ok3">Ok</button>
@@ -68,51 +68,37 @@
             </form>
         </div>
     </div>
-    <div class="cardcontain">
-        <h1 style="text-align:center;">Edit Account</h1>
-        <h2>Account Owner:
-            <?php
-                echo $_SESSION['cfname'].' '.$_SESSION['clname'];
-            ?>
-        </h2>
-        <h2>Email:
-            <?php
-                echo $_SESSION['cemail'];
-            ?>
-        </h2>
-        <h2>Password:
-            <?php
-                echo $_SESSION['cpassword'];
-            ?>
-        </h2>
-        <h2>Account Number:
-            <?php
-                echo $_SESSION['accountNumber'];
-            ?>
-        </h2>
-        <h2>Card Number:
-            <?php
-                echo $_SESSION['cardNumber'];
-            ?>
-        </h2>
+    <div class="cardcontaindep">
+    <h1>Withdraw Money from:</h1>
+    <h2>Account Owner:
+        <?php
+            echo $_SESSION['cfname'].' '.$_SESSION['clname'];
+        ?>
+    </h2>
+    <h2>Account Number:
+        <?php
+            echo $_SESSION['accountNumber'];
+        ?>
+    </h2>
+    <h2>Card Number:
+        <?php
+            echo $_SESSION['cardNumber'];
+        ?>
+    </h2>
+    <h2>
+    Account Balance: 
+    <?php
+        echo $_SESSION['balance'];
+    ?>
+    </h2>
     </div>
-    <div class="cardcontain2">
-        <form action="editaccprocess.php" method="post">
-            <div id="editacc">
-                New First Name
-                <input class="input" type="text" name="cfname" placeholder="First Name">
-                New Last Name
-                <input class="input" type="text" name="clname" placeholder="Last Name">
-                New Email Address
-                <input class="input" type="text" name="cemail" placeholder="Email">
-                New Password
-                <input class="input" type="password" name="cpassword" placeholder="Password">
-            </div>
-            <div id="editc">
-                <button class="button" type="submit" onclick="javascript: return confirm('Please confirm edit');" name="confedit">Proceed</button>
-            </div>
-        </form>
+    <form action="withdrawMcalculate.php" method="post">
+    <div id="depo">
+        <input class="input" type="number" name="depoM" placeholder="Enter Amount"><br>
+        <button class="button" type="submit" onclick="javascript: return confirm('Please confirm deposit');" name="withdrawMan">Proceed</button>
+        <h2>Withdraw</h2>  
     </div>
+    </form>
 </body>
 
 </html>

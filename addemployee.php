@@ -20,6 +20,8 @@
             <img src="img/icon.png" alt="Bank Logo">
             <h1>BANKO DE JONI</h1>
         </div>
+        <div class="nav">
+        </div>
         <div class="dropdown">
             <button onclick="myFunction()" class="dropbtn"></button>
             <div id="myDropdown" class="dropdown-content">
@@ -36,31 +38,22 @@
             </div>
         </div>
         <div class="user">
-        <?php
-            echo $_SESSION['fname'].' '.$_SESSION['lname'].
-            '<br>';
-        ?>
-        <div class="role">
-        <?php
-            echo $_SESSION['position'].
-            '<br>';
-        ?>
-        </div>
+        Administrator
         </div>
     </div>
     <div class="createNewAcc">
-        <h1>Create New Account</h1>
+        <h1>Add New Employee</h1>
         <div class="newAccform">
-            <form action="newaccprocess.php" method="post">
-            <input class="input" type="text" name="cfname" placeholder="First Name"><br>
-            <input class="input" type="text" name="clname" placeholder="Last Name"><br>
-            <input class="input" type="text" name="cemail" placeholder="Email"><br>
-            <input class="input" type="password" name="cpassword" placeholder="Password"><br>
-            <select name="cardType">
-                <option value="Credit">Credit</option>
-                <option value="Debit">Debit</option>
+            <form action="addnewemployeprocess.php" method="post">
+            <input class="input" type="text" name="fname" placeholder="First Name"><br>
+            <input class="input" type="text" name="lname" placeholder="Last Name"><br>
+            <input class="input" type="text" name="email" placeholder="Email"><br>
+            <input class="input" type="password" name="password" placeholder="Password"><br>
+            <select name="position">
+                <option value="Manager">Manager</option>
+                <option value="Teller">Teller</option>
             </select>
-            <button class="button" type="submit" name="newAcc">Proceed</button>
+            <button class="button" type="submit" name="newEmp">Proceed</button>
             </form>
         </div>
     </div>

@@ -15,6 +15,10 @@ require_once('connection.php');
 			$query2="select * from customer where cemail='".$_POST['email']."' and cpassword='".$_POST['password']."'" ;
 			$result2=mysqli_query($conn,$query2);
 
+			$query51="select * from admin where adminUser='".$_POST['email']."' and adminPassword='".$_POST['password']."'" ;
+			$result51=mysqli_query($conn,$query51);
+
+
 			if($data = mysqli_fetch_array($result))
 			{
 				if($_SESSION['position']=$data['position']=='Teller')
@@ -45,6 +49,13 @@ require_once('connection.php');
 					$_SESSION['expiryDate']=$data['expiryDate'];
 					$_SESSION['accountType']=$data['accountType'];
 					header("location:customer.php");
+			}
+			elseif($data51 = mysqli_fetch_array($result51))
+			{
+				$_SESSION['id']=$data51['id'];
+				$_SESSION['adminUser']=$data51['adminUser'];
+				$_SESSION['adminPassword']=$data51['adminPassword'];
+				header("location:adminview.php");
 			}
 			else
 			{

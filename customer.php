@@ -92,7 +92,7 @@
                 <h1>
                     Account Balance:
                     <?php
-                        echo $_SESSION['balance'];
+                          echo $_SESSION['balance'];
                     ?>
                 </h1>
             </div>

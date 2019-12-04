@@ -60,56 +60,58 @@
         <?php
             }
         ?>
-            <form action="editaccquery.php" method="post">
-                <div id="deposit">
-                    <input class="input" type="text" name="accountNumber" placeholder="Account Number"><br>
-                    <button class="button" type="submit" name="ok3">Ok</button>
+            <form action="editemployee.php" method="post">
+                <div id="deposit2">
+                    <input class="input" type="text" name="fname" placeholder="First Name">
+                    <input class="input" type="text" name="lname" placeholder="Last Name">
+                    <button class="button" type="submit" name="ok5">Ok</button>
                 </div>
             </form>
         </div>
     </div>
     <div class="cardcontain">
-        <h1 style="text-align:center;">Edit Account</h1>
+        <h1 style="text-align:center;">Edit Employee</h1>
         <h2>Account Owner:
             <?php
-                echo $_SESSION['cfname'].' '.$_SESSION['clname'];
+                echo $_SESSION['fname'].' '.$_SESSION['lname'];
+            ?>
+        </h2>
+        <h2>Position:
+            <?php
+                echo $_SESSION['position'];
             ?>
         </h2>
         <h2>Email:
             <?php
-                echo $_SESSION['cemail'];
+                echo $_SESSION['email'];
             ?>
         </h2>
         <h2>Password:
             <?php
-                echo $_SESSION['cpassword'];
+                echo $_SESSION['password'];
             ?>
         </h2>
-        <h2>Account Number:
-            <?php
-                echo $_SESSION['accountNumber'];
-            ?>
-        </h2>
-        <h2>Card Number:
-            <?php
-                echo $_SESSION['cardNumber'];
-            ?>
-        </h2>
+        <h2><br></h2>
     </div>
-    <div class="cardcontain2">
-        <form action="editaccprocess.php" method="post">
+    <div class="cardcontain3">
+        <form action="editemployeeprocess.php" method="post">
             <div id="editacc">
                 New First Name
-                <input class="input" type="text" name="cfname" placeholder="First Name">
+                <input class="input" type="text" name="fname" placeholder="First Name">
                 New Last Name
-                <input class="input" type="text" name="clname" placeholder="Last Name">
+                <input class="input" type="text" name="lname" placeholder="Last Name">
+                New Position
+                <select name="position">
+                    <option value="Manager">Manager</option>
+                    <option value="Teller">Teller</option>
+                </select><br>
                 New Email Address
-                <input class="input" type="text" name="cemail" placeholder="Email">
+                <input class="input" type="text" name="email" placeholder="Email">
                 New Password
-                <input class="input" type="password" name="cpassword" placeholder="Password">
+                <input class="input" type="password" name="password" placeholder="Password">
             </div>
             <div id="editc">
-                <button class="button" type="submit" onclick="javascript: return confirm('Please confirm edit');" name="confedit">Proceed</button>
+                <button class="button" type="submit" onclick="javascript: return confirm('Please confirm edit');" name="confeditemp">Proceed</button>
             </div>
         </form>
     </div>
