@@ -60,7 +60,7 @@
         <?php
             }
         ?>
-            <form action="depositquery.php" method="post">
+            <form action="depositcalculate.php" method="post">
                 <div id="deposit">
                     <input class="input" type="text" name="accountNumber" placeholder="Account Number"><br>
                     <button class="button" type="submit" name="ok2">Ok</button>

@@ -48,11 +48,12 @@
         
         <table class="table" id="myTable">
             <tr>
-                <th style="width:10%;" onclick="sortTable(0)">Position</th>
-                <th style="width:10%;" onclick="sortTable(1)">First Name</th>
-                <th style="width:10%;" onclick="sortTable(2)">Last Name</th>
-                <th style="width:10%;" onclick="sortTable(3)">Email</th>
-                <th style="width:10%;" onclick="sortTable(4)">Password
+                <th style="width:10%;" onclick="sortTable(0)">Branch Code</th>
+                <th style="width:10%;" onclick="sortTable(1)">Position</th>
+                <th style="width:10%;" onclick="sortTable(2)">First Name</th>
+                <th style="width:10%;" onclick="sortTable(3)">Last Name</th>
+                <th style="width:10%;" onclick="sortTable(4)">Email</th>
+                <th style="width:10%;" onclick="sortTable(5)">Password
                 </th>
             </tr>
             <?php
@@ -65,7 +66,7 @@
             {
                 while($row = $result-> fetch_assoc())
                 {
-                    echo "<tr><td>".$row['position']."</td><td class=pads1>".$row['fname']."</td><td class=pads1>".$row['lname']
+                    echo "<tr><td>".$row['branchCode']."</td><td>".$row['position']."</td><td class=pads1>".$row['fname']."</td><td class=pads1>".$row['lname']
                     ."</td><td>".$row['email']."</td><td>".$row['password']."</td></tr>";
                 }
                 echo "</table>";

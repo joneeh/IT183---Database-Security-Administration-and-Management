@@ -61,7 +61,8 @@ body {
     padding: 20px;
     background-color: white;
     box-shadow: 3px 3px rgb(143, 142, 142, 0.5);
-    transform: translate(150px, 100px);
+    margin-left: 150px;
+    margin-top: 100px;
     display: inline-block;
 }
 
@@ -90,7 +91,9 @@ body {
     padding: 20px;
     background-color: white;
     box-shadow: 3px 3px rgb(143, 142, 142, 0.5);
-    transform: translate(800px, -225px);
+    margin-left: 750px;
+    position: absolute;
+    margin-top: -330px;
     display: inline-block;
 }
 
@@ -117,18 +120,6 @@ body {
     width: 200px;
     position: relative;
     display: block;
-}
-
-input[type=username],
-select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid rgb(172, 172, 172);
-    background-color: rgb(248, 248, 248);
-    border-radius: 4px;
-    box-sizing: border-box;
 }
 
 input[type=username],
@@ -172,7 +163,7 @@ select {
 
 input[type=number],
 select {
-    width: 65%;
+    width: 60%;
     padding: 12px 20px;
     margin-top: 26px;
     border: 1px solid rgb(172, 172, 172);
@@ -181,6 +172,18 @@ select {
     box-sizing: border-box;
     z-index: 98;
     float: left;
+}
+
+.createNewAcc input[type=number],
+select {
+    width: 53%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(172, 172, 172);
+    background-color: rgb(248, 248, 248);
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 #withdraw{
@@ -602,7 +605,6 @@ input[type=text] {
     margin-top: -30px;
 }
 
-}
 .cardcontain3 h1{
     color: black;
 }
@@ -780,13 +782,13 @@ transform: translate(100px);
 }
 
 .nav{
-    margin-top: 30px;
-    margin-left: 500px;
+    margin-top: 20px;
+    margin-left: 400px;
     position: absolute;
 }
 
 .nav a{
-    padding: 30px;
+    padding: 20px;
     color: black;
     text-decoration: none;
 }

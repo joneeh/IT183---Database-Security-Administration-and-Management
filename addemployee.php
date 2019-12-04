@@ -20,8 +20,6 @@
             <img src="img/icon.png" alt="Bank Logo">
             <h1>BANKO DE JONI</h1>
         </div>
-        <div class="nav">
-        </div>
         <div class="dropdown">
             <button onclick="myFunction()" class="dropbtn"></button>
             <div id="myDropdown" class="dropdown-content">
@@ -44,16 +42,16 @@
     <div class="createNewAcc">
         <h1>Add New Employee</h1>
         <div class="newAccform">
-            <form action="addnewemployeprocess.php" method="post">
+            <form action="addemployeprocess.php" method="post">
             <input class="input" type="text" name="fname" placeholder="First Name"><br>
             <input class="input" type="text" name="lname" placeholder="Last Name"><br>
             <input class="input" type="text" name="email" placeholder="Email"><br>
-            <input class="input" type="password" name="password" placeholder="Password"><br>
+            <input pattern=".{8,}" required title="8 characters minimum" class="input" type="password" name="password" placeholder="Password"><br>
             <select name="position">
                 <option value="Manager">Manager</option>
                 <option value="Teller">Teller</option>
             </select>
-            <button class="button" type="submit" name="newEmp">Proceed</button>
+            <button class="button" type="submit" onclick="javascript: return confirm('Please confirm account addition');" name="newEmp">Proceed</button>
             </form>
         </div>
     </div>

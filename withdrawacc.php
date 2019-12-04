@@ -60,7 +60,7 @@
         <?php
             }
         ?>
-            <form action="withdrawMquery.php" method="post">
+            <form action="withdrawMcalculate.php" method="post">
                 <div id="deposit">
                     <input class="input" type="text" name="accountNumber" placeholder="Account Number"><br>
                     <button class="button" type="submit" name="ok3">Ok</button>
@@ -95,7 +95,7 @@
     <form action="withdrawMcalculate.php" method="post">
     <div id="depo">
         <input class="input" type="number" name="depoM" placeholder="Enter Amount"><br>
-        <button class="button" type="submit" onclick="javascript: return confirm('Please confirm deposit');" name="withdrawMan">Proceed</button>
+        <button class="button" type="submit" onclick="javascript: return confirm('Please confirm withdrawal');" name="withdrawMan">Proceed</button>
         <h2>Withdraw</h2>  
     </div>
     </form>

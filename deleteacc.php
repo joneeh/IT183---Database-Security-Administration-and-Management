@@ -60,7 +60,7 @@
         <?php
             }
         ?>
-            <form action="deleteaccquery.php" method="post">
+            <form action="deleteaccprocess.php" method="post">
                 <div id="deposit">
                     <input class="input" type="text" name="accountNumber" placeholder="Account Number"><br>
                     <button class="button" type="submit" name="ok">Ok</button>
@@ -92,7 +92,7 @@
     ?>
     </h2>
     </div>
-    <form action="deleteaccquery.php" method="post">
+    <form action="deleteaccprocess.php" method="post">
     <div id="delc">
         <button class="button" type="submit" onclick="javascript: return confirm('Please confirm account deletion');" name="confdelete">Proceed</button>
     </div>

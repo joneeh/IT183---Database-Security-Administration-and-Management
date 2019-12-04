@@ -38,16 +38,7 @@
             </div>
         </div>
         <div class="user">
-            <?php
-            echo $_SESSION['fname'].' '.$_SESSION['lname'].
-            '<br>';
-        ?>
-            <div class="role">
-                <?php
-            echo $_SESSION['position'].
-            '<br>';
-        ?>
-            </div>
+        Administrator
         </div>
     </div>
     <div class="depositAcc">
@@ -60,7 +51,7 @@
         <?php
             }
         ?>
-            <form action="editemployee.php" method="post">
+            <form action="editemployeprocess.php" method="post">
                 <div id="deposit2">
                     <input class="input" type="text" name="fname" placeholder="First Name">
                     <input class="input" type="text" name="lname" placeholder="Last Name">
@@ -108,7 +99,7 @@
                 New Email Address
                 <input class="input" type="text" name="email" placeholder="Email">
                 New Password
-                <input class="input" type="password" name="password" placeholder="Password">
+                <input pattern=".{8,}" required title="8 characters minimum" class="input" type="password" name="password" placeholder="Password">
             </div>
             <div id="editc">
                 <button class="button" type="submit" onclick="javascript: return confirm('Please confirm edit');" name="confeditemp">Proceed</button>

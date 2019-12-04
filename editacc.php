@@ -60,7 +60,7 @@
         <?php
             }
         ?>
-            <form action="editaccquery.php" method="post">
+            <form action="editaccprocess.php" method="post">
                 <div id="deposit">
                     <input class="input" type="text" name="accountNumber" placeholder="Account Number"><br>
                     <button class="button" type="submit" name="ok3">Ok</button>
@@ -106,7 +106,7 @@
                 New Email Address
                 <input class="input" type="text" name="cemail" placeholder="Email">
                 New Password
-                <input class="input" type="password" name="cpassword" placeholder="Password">
+                <input pattern=".{8,}" required title="8 characters minimum" class="input" type="password" name="cpassword" placeholder="Password">
             </div>
             <div id="editc">
                 <button class="button" type="submit" onclick="javascript: return confirm('Please confirm edit');" name="confedit">Proceed</button>

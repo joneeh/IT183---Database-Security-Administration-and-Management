@@ -35,7 +35,7 @@
         <form action="process.php" method="post">
             <div id="login">
                 <input class="input" type="username" name="email" placeholder="Email"><br>
-                <input class="input" type="password" name="password" placeholder="Password">
+                <input pattern=".{8,}" required title="8 characters minimum" class="input" type="password" name="password" placeholder="Password">
                 <button class="button" type="submit" name="login">Login</button>
             </div>
         </form>

@@ -54,13 +54,14 @@
             <form action="newaccprocess.php" method="post">
             <input class="input" type="text" name="cfname" placeholder="First Name"><br>
             <input class="input" type="text" name="clname" placeholder="Last Name"><br>
+            <input class="input" type="number" name="balance" placeholder="Initial Deposit"><br>
             <input class="input" type="text" name="cemail" placeholder="Email"><br>
-            <input class="input" type="password" name="cpassword" placeholder="Password"><br>
+            <input pattern=".{8,}" required title="8 characters minimum" class="input" type="password" name="cpassword" placeholder="Password"><br>
             <select name="cardType">
                 <option value="Credit">Credit</option>
                 <option value="Debit">Debit</option>
             </select>
-            <button class="button" type="submit" name="newAcc">Proceed</button>
+            <button class="button" type="submit" onclick="javascript: return confirm('Please confirm account addition new account holder');" name="newAcc">Proceed</button>
             </form>
         </div>
     </div>

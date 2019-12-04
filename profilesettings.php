@@ -38,7 +38,7 @@
         </div>
         <div class="user">
             <?php
-             echo $_SESSION['fname'].' '.$_SESSION['lname'].
+             echo $_SESSION['cfname'].' '.$_SESSION['clname'].
             '<br>';
         ?>
             <div class="role">
@@ -53,8 +53,8 @@
                 <a>Enter New Email</a>
                 <input class="input" type="username" name="email" placeholder="Email"><br>
                 <a>Enter Password to confirm</a>
-                <input class="input" type="password" name="password" placeholder="Password">
-                <button class="button" type="submit" name="changeuse">Save</button>
+                <input pattern=".{8,}" required title="8 characters minimum" class="input" type="password" name="password" placeholder="Password">
+                <button class="button" type="submit" onclick="javascript: return confirm('Please confirm email update');" name="changeuse">Save</button>
             </div>
         </form>
         <form action="updatepassword.php" method="post">
@@ -63,8 +63,8 @@
                 <a>Enter New Password</a>
                 <input class="input" type="password" name="password" placeholder="New Password"><br>
                 <a>Enter Old Password to confirm</a>
-                <input class="input" type="password" name="passwordold" placeholder="Old Password">
-                <button class="button" type="submit" name="changepass">Save</button>
+                <input pattern=".{8,}" required title="8 characters minimum" class="input" type="password" name="passwordold" placeholder="Old Password">
+                <button class="button" type="submit" onclick="javascript: return confirm('Please confirm password update');" name="changepass">Save</button>
             </div>
         </form>
     </div>
