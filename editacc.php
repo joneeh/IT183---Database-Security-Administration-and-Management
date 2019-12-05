@@ -21,7 +21,7 @@
         <div class="title">
             <img src="img/icon.png" alt="Bank Logo">
             <h1>BANKO DE JONI</h1>
-        </div>
+        </div> 
         <div class="dropdown">
             <button onclick="myFunction()" class="dropbtn"></button>
             <div id="myDropdown" class="dropdown-content">
